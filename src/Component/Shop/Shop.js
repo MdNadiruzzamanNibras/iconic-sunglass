@@ -26,6 +26,7 @@ const Shop = () => {
    
         const randomArray =[Math.floor(Math.random() *(randoms.length))]
       setrandoms(chooses[randomArray])
+      console.log(chooses[randomArray])
     }
     useEffect(()=>{
         fetch('data.json')
@@ -53,6 +54,7 @@ const Shop = () => {
             
                 <button className='border px-4 py-3 rounded-pill' onClick={()=>handleRandom(randoms)}>Choose 1 for me</button>
             </div>
+
             
             
         </div>
