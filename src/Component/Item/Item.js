@@ -8,6 +8,7 @@ const Item = ({handleToChoose, sunglass}) => {
   
     return (
         <div className='item-container'>
+            <h1>Selected Item</h1>
             <div className="img-container">
                <img src={img} alt=''></img>
             </div>

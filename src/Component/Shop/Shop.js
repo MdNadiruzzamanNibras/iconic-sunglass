@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Choose from '../Choose/Choose';
 import Item from '../Item/Item';
+import Random from '../Random/Random';
 import './Shop.css'
 const Shop = () => {
     const [sunglasses, setSunglasses]=useState([])
@@ -20,11 +21,11 @@ const Shop = () => {
         setChoose(newChoose)
        
     }
-    const [random, setrandom]= useState([])
+    const [randoms, setrandoms]= useState([])
     const handleRandom=()=>{
    
-        const randomArray =[Math.floor(Math.random() *(newChoose.length))]
-      console.log(randomArray)
+        const randomArray =[Math.floor(Math.random() *(randoms.length))]
+      setrandoms(chooses[randomArray])
     }
     useEffect(()=>{
         fetch('data.json')
@@ -44,10 +45,15 @@ const Shop = () => {
                    chooses.map(choose=> <Choose key={choose._id} choose={choose} 
                     ></Choose>)
                }
-               <div>
-                <button onClick={()=>handleRandom(chooses)}>Choose 1 for me</button>
+               
+            
+            {
+                randoms.map(random=><Random  random={random}></Random>)
+            }
+            
+                <button className='border px-4 py-3 rounded-pill' onClick={()=>handleRandom(chooses)}>Choose 1 for me</button>
             </div>
-            </div>
+            
             
         </div>
     );
