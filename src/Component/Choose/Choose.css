@@ -1,0 +1,11 @@
+.choose-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.choose-flex img{
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+}
