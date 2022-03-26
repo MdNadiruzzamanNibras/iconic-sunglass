@@ -18,10 +18,12 @@ const Shop = () => {
         // // }
         
         setChoose(newChoose)
+        return newChoose;
     }
     const [random, setrandom]= useState([])
-    const handleRandom=()=>{
-       console.log('add')
+    const handleRandom=(choose)=>{
+        const random =Math.floor(Math.random() *choose.length)
+      console.log(random)
     }
     useEffect(()=>{
         fetch('data.json')
