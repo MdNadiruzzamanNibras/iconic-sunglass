@@ -51,7 +51,7 @@ const Shop = () => {
                 randoms.map(random=><Random  random={random}></Random>)
             }
             
-                <button className='border px-4 py-3 rounded-pill' onClick={()=>handleRandom(chooses)}>Choose 1 for me</button>
+                <button className='border px-4 py-3 rounded-pill' onClick={()=>handleRandom(randoms)}>Choose 1 for me</button>
             </div>
             
             
