@@ -7,17 +7,21 @@ const Shop = () => {
     const[chooses, setChoose]=useState([])
     
     const handleToChoose=(sunglass)=>{
-        let newChoose =[]
-        const chooseLength = chooses.slice(0, 3)
-        if(!chooseLength){
+        
+        
+        // if(!newChoose.length===4){
             
-            const newChoose =[...chooses, sunglass]
-        }
-        else{
+           const newChoose =[...chooses, sunglass]
+        // // }
+        // // else{
 
-        }
+        // // }
         
         setChoose(newChoose)
+    }
+    const [random, setrandom]= useState([])
+    const handleRandom=()=>{
+       console.log('add')
     }
     useEffect(()=>{
         fetch('data.json')
@@ -29,13 +33,17 @@ const Shop = () => {
             
             <div className='items-container'>
              {
-                 sunglasses.map(sunglass=><Item key={sunglass.id} sunglass={sunglass}handleToChoose={handleToChoose}></Item>)
+                 sunglasses.map(sunglass=><Item key={sunglass.id} sunglass={sunglass} handleToChoose={handleToChoose}></Item>)
              }
             </div>
             <div className='choose-container'>
                {
-                   chooses.map(choose=> <Choose choose={choose}></Choose>)
+                   chooses.map(choose=> <Choose key={choose._id} choose={choose} 
+                    ></Choose>)
                }
+               <div>
+                <button onClick={handleRandom}>Choose 1 for me</button>
+            </div>
             </div>
             
         </div>

@@ -1,6 +1,6 @@
 [{
     "id": "1",
-    "name": "AIDEN-BLACK-POLARIZED",
+    "name": "AIDEN-POLARIZED",
     "price": 0,
     "_id": 1,
     "ratings": 4,
@@ -8,7 +8,7 @@
   },
   {
     "id": "2",
-    "name": "Brunette-Green-Sunglasses",
+    "name": "Brunette-Sunglasses",
     "price": 630,
     "_id": 2,
     "ratings": 4,
@@ -16,7 +16,7 @@
   },
   {
     "id": "3",
-    "name": "Steampunk Double Lens Flip Up",
+    "name": "Steampunk",
     "price": 200,
     "_id": 3,
     "ratings": 4,
@@ -24,7 +24,7 @@
   },
   {
     "id": "4",
-    "name": "YlrRwveoL._AC_UL1500_",
+    "name": "AC_UL1500_",
     "price": 430,
     "_id":4,
     "ratings": 4,
@@ -48,7 +48,7 @@
       },
     {
         "id": "7",
-        "name": "Ray-Ban-RB3025-Gunmetal",
+        "name": "Ray-Ban",
         "price": 450,
         "_id": 7,
         "ratings": 4,
@@ -56,7 +56,7 @@
       },
     {
         "id": "8",
-        "name": "ROSANNA Vintage Shield Visor Mask Sunglasses",
+        "name": "ROSANNA Vintage",
         "price": 210,
         "_id": 8,
         "ratings": 4,
@@ -72,7 +72,7 @@
       },
     {
         "id": "10",
-        "name": "Square Colored lenses Sunglasses",
+        "name": "Square Colored",
         "price": 980,
         "_id": 10,
         "ratings": 4,
@@ -80,7 +80,7 @@
       },
     {
         "id": "11",
-        "name": "Tortoishell Round Aceetate Sunglass",
+        "name": "Tortoishell",
         "price": 380,
         "_id": 11,
         "ratings": 4,
@@ -88,7 +88,7 @@
       },
     {
         "id": "12",
-        "name": "Uv400 Polarized Sunglasses For Men ",
+        "name": "Uv400 Polarized",
         "price": 0,
         "_id": 12,
         "ratings": 4,
