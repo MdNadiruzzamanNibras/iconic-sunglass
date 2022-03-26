@@ -21,7 +21,7 @@
 @media only screen and (max-width: 688px) {
     body{margin: 0;
     padding: 0;}
-    .shop-container{width: 100%;}
+
   .items-container, .choose-container{
          margin: 0 5px;
          grid-template-columns: 1fr;}

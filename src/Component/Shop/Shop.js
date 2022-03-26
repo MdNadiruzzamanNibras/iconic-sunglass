@@ -18,12 +18,13 @@ const Shop = () => {
         // // }
         
         setChoose(newChoose)
-        return newChoose;
+       
     }
     const [random, setrandom]= useState([])
-    const handleRandom=(choose)=>{
-        const random =Math.floor(Math.random() *choose.length)
-      console.log(random)
+    const handleRandom=()=>{
+   
+        const randomArray =[Math.floor(Math.random() *(newChoose.length))]
+      console.log(randomArray)
     }
     useEffect(()=>{
         fetch('data.json')
@@ -44,7 +45,7 @@ const Shop = () => {
                     ></Choose>)
                }
                <div>
-                <button onClick={handleRandom}>Choose 1 for me</button>
+                <button onClick={()=>handleRandom(chooses)}>Choose 1 for me</button>
             </div>
             </div>
             
